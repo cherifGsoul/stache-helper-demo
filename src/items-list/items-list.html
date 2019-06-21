@@ -1,0 +1,10 @@
+<script src="../../node_modules/steal/steal.js"></script>
+<script type="steal-module">
+  import ItemsList from "~/items-list/";
+
+  let itemsList = new ItemsList({
+    viewModel: {}
+  });
+
+  document.body.appendChild(itemsList.element);
+</script>
