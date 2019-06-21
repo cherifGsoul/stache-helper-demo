@@ -4,9 +4,9 @@ import view from './items-list.stache';
 
 stache.addHelper('isArray', function(val, options) {
   if (val && Array.isArray(val)) {
-    return options.fn(this);
+    return options.fn(true);
   } else {
-    return options.inverse(true);
+    return options.inverse(this);
   }
 });
 
